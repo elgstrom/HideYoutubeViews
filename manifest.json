@@ -1,18 +1,12 @@
 {
-    "manifest_version": 2,
-    "name": "Hide YouTube Views",
+    "name": "YouTube Element Hider",
     "version": "1.0",
-    "description": "Hides the view counts on YouTube videos.",
-    "permissions": [
-      "tabs",
-      "http://*/*",
-      "https://*/*"
-    ],
+    "description": "Hides elements from YouTube",
+    "manifest_version": 3,
     "content_scripts": [
       {
         "matches": ["https://www.youtube.com/*"],
-        "js": ["contentScript.js"],
-        "run_at": "document_end"
+        "js": ["content_script.js"]
       }
     ]
   }
